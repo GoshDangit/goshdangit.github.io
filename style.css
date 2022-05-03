@@ -1,0 +1,349 @@
+@font-face {
+    font-family: FellEnglishItalic;
+    src: url(IMFellEnglish-Italic.ttf);
+}
+
+@font-face {
+    font-family: PoppinsLight;
+    src: url(Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: PoppinsExtraLight;
+    src: url(Poppins-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: FellEnglish;
+    src: url(IMFellEnglishSC-Regular.ttf);
+}
+
+body{
+    position: relative;
+    min-height: 98vh;
+    margin: 0;
+  }
+
+/* #pageContainer {
+    position: relative;
+    min-height: 98vh;
+    max-width: 100vw;
+} */
+
+#contentWrap {
+    padding-bottom: 2.5rem;
+}
+
+header {
+    /* display: flex; */
+    justify-content: center;
+    /* padding: 1.0px; */
+    background: rgba(190, 190, 190, .4);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    color:rgb(65, 65, 65);
+    
+}
+
+#navBarList {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.navItem {
+    display: inline-block;
+    margin-right: 12px;
+    margin-left: 12px;
+}
+
+#navBarList a:link {
+    color:rgb(65, 65, 65);
+    text-decoration: none;
+    /* border-bottom: 3px solid rgba(255, 255, 255, 0); */
+}
+
+#navBarList a:visited {
+    color:rgb(65, 65, 65);
+    text-decoration: none;
+    border-bottom: 3px solid rgba(255, 255, 255, 0);
+}
+
+#navBarList a:hover {
+    color: rgb(115, 115, 115);
+    border-bottom: 3px solid rgb(115, 115, 115);
+}
+.currentLink {
+    border-bottom: 3px solid rgb(65, 65, 65);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    text-align: center;
+    color:rgb(65, 65, 65);
+    font-family: PoppinsExtraLight, sans-serif; 
+    font-size: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-family: FellEnglish, sans-serif;
+    font-size: 40px;
+    color:rgb(0, 0, 0, .8);
+    margin: 0px;
+    padding: 15px;
+}
+
+
+
+/* --------------------------- Home Page -------------------------------- */
+
+#introPara {
+    padding-top: 12px;
+    padding-right: 20px;
+    padding-bottom: 12px;
+    padding-left: 25px;
+    font-weight: 600;
+}
+
+#performances {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(190, 190, 190, .4);
+}
+
+#performancesIntro {
+    font-size: 28px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 8px;
+    text-align: center;
+}
+
+#midsummer {
+    text-align: center;
+    font-family: FellEnglish, sans-serif;
+    font-size: 60px;
+    margin-top: -25px;
+}
+
+#Shakespeare {
+    text-align: center;
+    font-family: FellEnglish, sans-serif;
+    font-size: 30px;
+    margin-top: -60px;
+    margin-bottom: -5px;
+}
+
+#pratersMill {
+    font-size: 18px;
+    font-family: PoppinsExtraLight, sans-serif; 
+    color:rgb(0, 0, 0);
+    font-weight: 600;
+    text-align: center;
+}
+
+#burrPark {
+    font-size: 18px;
+    font-family: PoppinsExtraLight, sans-serif; 
+    color:rgb(0, 0, 0);
+    font-weight: 600;
+    text-align: center;
+    margin-top: -10px;
+}
+
+#donateContactContainer {
+    display: flex;
+    padding-top: 5px;
+}
+
+#donateButtonContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 50%;
+    order: 2;
+}
+
+#donateIntro {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-bottom: 30px;
+    margin-top: -10px;
+}
+
+#contactFormContainer {
+    flex: 50%;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+#contactForm {
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    background-color: rgb(190, 190, 190, .25);
+    border-radius: 6px;
+}
+
+#contactFormIntro {
+    font-family: PoppinsExtraLight, sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+    color:rgb(65, 65, 65);
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+input[type=text], textarea {
+    width: 90%;
+    padding: 5px;
+    border: 1px, solid, rgb(190, 190, 190, .4);
+    border-radius: 4px;
+    /* box-sizing: border-box; */
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-size: 15px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: rgb(215, 215, 215, .4);
+    color: rgb(65, 65, 65);
+    font-size: 15px;
+    padding: 10px;
+    border: 2px solid rgb(65, 65, 65, .4);
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 4px;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(192, 191, 191);
+}
+
+.formLabel {
+    font-family: PoppinsExtraLight, sans-serif;
+    font-weight: 600;
+    color:rgb(65, 65, 65);
+}
+
+/* input:invalid {
+    border: 2px solid red;
+} */
+
+
+
+/* -------------------------------- Media Page ---------------------------- */
+
+h2 {
+    text-align: center;
+    font-weight: bolder;
+    font-family: PoppinsExtraLight, sans-serif; 
+    color:rgb(65, 65, 65);
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} 
+
+/* .playPictures {
+    flex: 50%;
+} */
+
+.henryDisplayedImg {
+    position: relative;
+    display: block;
+    width: 55%;
+    height: 65%;
+    max-height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.twelfthDisplayedImg {
+    position: relative;
+    display: block;
+    width: 55%;
+    height: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.henryThumbBar {
+    width: 55%;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.twelfthThumbBar {
+    width: 55%;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.henryThumbBar img{
+    display: block;
+    width: 10%;
+    height: 120px;
+    float: left;
+    cursor: pointer;
+}
+
+.twelfthThumbBar img {
+    display: block;
+    width: 14.2857%;
+    height: 120px;
+    float: left;
+    cursor: pointer;
+}
+
+
+
+
+/* -------------------------------- History Page ----------------------------- */
+
+#historyPara1 {
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 10px;
+}
+
+#historyPara2 {
+    padding-top: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.text {
+    font-size: 20px;
+    font-family: PoppinsExtraLight, sans-serif; 
+    color:rgb(65, 65, 65);
+    padding: 20px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

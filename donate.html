@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Ensures optimal rendering on mobile devices. -->
+        <title>Conasauga Shakespeare Coalition</title>
+        <link href='style.css' rel='stylesheet'>
+        <script src='main.js'></script>
+    </head>
+    <body>
+        
+        <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+
+            <div id='contentWrap'>   
+                <header>
+                    <h1>Conasauga Shakespeare Coalition</h1>
+                </header>
+        
+                <nav>
+                    <ul id='navBarList'>
+                        <li class='navItem'><a href='index.html'>Home</a></li>
+                        <li class='navItem'><a href='media.html'>Media</a></li>
+                        <li class='navItem currentLink'>Donate</li>
+                        <li class='navItem'><a href='about.html'>About Us</a></li>
+                        <li class='navItem'><a href='contact.html'>Contact</a></li>
+                        
+                    </ul>
+                </nav>
+                
+                <main>
+                    <section>
+                        <h3 class='text'>The Conasauga Shakespeare Coalition is a registered 501(c)3 non-profit organization and qualifies as a deductible charitable donation. Please click the link below if you would like to support us.</h3>
+
+                        <div id='donateButtonContainer'>
+                            <div id='donateButton'>
+                                <script>
+    
+                                    PayPal.Donation.Button({
+                                 
+                                        env: 'production',
+                                 
+                                        hosted_button_id: 'HMVXR9C68RLL4',
+                                 
+                                        // business: 'YOUR_EMAIL_OR_PAYERID',
+                                 
+                                        image: {
+                                 
+                                            src: 'images/Paypal2.png',
+                                            // src: 'https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif',
+                                            title: 'PayPal - The safer, easier way to pay online!',
+                                 
+                                            alt: 'Donate with PayPal button'
+                                 
+                                        },
+                                 
+                                        onComplete: function (params) {
+                                 
+                                            // Your onComplete handler
+                                 
+                                        },
+                                 
+                                    }).render('#donateButtonContainer');
+                                 
+                                 </script>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+
+            <footer>
+                <p>Copyright 2022 Conasauga Shakespeare Coalition</p>
+            </footer>
+    </body>
+</html>

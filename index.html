@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Ensures optimal rendering on mobile devices. -->
+        <title>Conasauga Shakespeare Coalition</title>
+        <link href='style.css' rel='stylesheet'>
+        <script src='main.js'></script>
+    </head>
+    <body>
+        <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+            <div id='contentWrap'>
+                <header>
+                    <h1>Conasauga Shakespeare Coalition</h1>
+                </header>
+        
+                <nav>
+                    <ul id='navBarList'>
+                        <li class='navItem currentLink' id='home'>Home</li>
+                        <li class='navItem' id='media'><a href='media.html'>Media</a></li>
+                        <li class='navItem' id='history'><a href='history.html'>History</a></li>
+                    </ul>
+                </nav>
+                
+                <main>
+                    <section>
+                        <p class='text' id='introPara'>The Conasauga Shakespeare Coalition is a professional, non-profit theater company based in Dalton, Georgia which looks to deliver theater to audiences of all ages, with an emphasis on the timeless works of William Shakespeare. The Coalition company is comprised of actors from many different backgrounds, ranging from union professionals and local talent, to student actors-in-training. CSC has hosted players from around the United States, to as far as Prague, Czech Republic. </p>
+                    </section>
+        
+                    <section id='performances'>
+                        <h3 id='performancesIntro' class='text'>See our upcoming show!</h3>
+                        <p id='midsummer'>A Midsummer Night's Dream<br></p>
+                        <p id='Shakespeare'>William Shakespeare</p>
+                        <p id='pratersMill'>June 16<sup>th</sup>, 17<sup>th</sup>, and 18<sup>th</sup> at <a href='https://pratersmill.org/' target='_blank'>Prater's Mill</a></p>
+                        <p id='burrPark'>June 23<sup>rd</sup>, 24<sup>th</sup>, and 25<sup>th</sup> at <a href='https://www.google.com/maps/place/Burr+Performing+Arts+Park/@34.7711263,-84.9673251,15z/data=!4m5!3m4!1s0x0:0xc3a732bab8af7d6b!8m2!3d34.7711263!4d-84.9673251' target='_blank'>Burr Performing Arts Park</a></p>            
+                    </section>
+
+                    <section id='donateContactContainer'>
+                        
+
+                        <div id='donateButtonContainer'>
+                            <h3 class='text' id='donateIntro'>The Conasauga Shakespeare Coalition is a registered 501(c)3 non-profit organization and qualifies as a deductible charitable donation. Please click the link below if you would like to support us.</h3>
+                            <div id='donateButton'>
+                                <script>
+    
+                                    PayPal.Donation.Button({
+                                 
+                                        env: 'production',
+                                 
+                                        hosted_button_id: 'HMVXR9C68RLL4',
+                                 
+                                        // business: 'YOUR_EMAIL_OR_PAYERID',
+                                 
+                                        image: {
+                                 
+                                            src: 'images/Paypal3.png',
+                                            // src: 'https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif',
+                                            title: 'PayPal - The safer, easier way to pay online!',
+                                 
+                                            alt: 'Donate with PayPal button'
+                                 
+                                        },
+                                 
+                                        onComplete: function (params) {
+                                 
+                                            // Your onComplete handler
+                                 
+                                        },
+                                 
+                                    }).render('#donateButtonContainer');
+                                 
+                                 </script>
+                            </div>
+                        </div>
+
+                        <div id='contactFormContainer'>
+                            <p id=contactFormIntro>Contact Us</p>
+                            <form action='action_page.php' id='contactForm'>
+
+                                <label for='fName' class='formLabel'>First Name</label>
+                                <input type='text' id='fName' name='firstName' placeholder='' required='required'><br>
+
+                                <label for='lName' class='formLabel'>Last Name</label>
+                                <input type='text' id='lName' name='lastName' placeholder='' required='required'><br>
+
+                                <label for='email' class='formLabel'>Email Address</label>
+                                <input type='text' id='email' name='email' placeholder='' required='required'><br>
+
+                                <label for='message' class='formLabel'>Message</label>
+                                <textarea id='message' name='message' placeholder='' required='required' maxlength='500'></textarea><br>
+
+                                <input type='submit' value='Submit' class='formLabel'>
+
+                            </form>
+                        </div>   
+                    </section>
+                </main>
+            </div>
+
+            <footer>
+                <p>Copyright 2022 Conasauga Shakespeare Coalition</p>
+            </footer>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+.flexboxContainer {
+    display: flex;
+} 
+
+.flexboxItem {
+    width: 200px;
+    margin: 10px;
+    border: 3px solid rgb(102, 236, 102);
+    background-color:rgb(77, 77, 218);
+}
+
+.flexboxItem1 {
+    min-height: 25px;
+    flex-shrink: 0;
+    order: 3;
+}
+
+.flexboxItem2 {
+    min-height: 50px;
+    flex-grow: 2;
+    align-self: flex-end;
+}
+
+.flexboxItem3 {
+    min-height: 75px;
+    flex-grow: 1;
+}
+
+.flexboxItem4 {
+    min-height: 100px;
+}
+
+/* #instructions {
+    font-size: 60px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 200px;
+} */
+
+/* the flexbox container deals with spacing mainly, and the individual flexbox items's can override the container's properties.
+
+What it really comes down to is having a flexbox container in the html wrapping the other elements. You then apply display: flex to the container to make it a flexbox, add justify-content and align-items, and maybe height/width and flex direction, and then on the individual flexbox items you can use the flex-shrink, flex-grow, and basis properties. */
