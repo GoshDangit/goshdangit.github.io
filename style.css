@@ -47,7 +47,7 @@ nav {
     font-size: 25px;
     font-weight: bold;
     color:rgb(65, 65, 65);
-    
+    flex-wrap: nowrap;
 }
 
 #navBarList {
