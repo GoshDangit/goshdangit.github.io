@@ -158,6 +158,30 @@ h1 {
     margin-top: -10px;
 }
 
+#praterTickets {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid black;
+    /* font-family: PoppinsExtraLight, sans-serif;  */
+    color:rgb(0, 0, 0);
+    
+}
+
+button:hover {
+    background-color: rgb(193, 241, 193);
+}
+
+
+#burrTickets {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid black;
+    /* font-family: PoppinsExtraLight, sans-serif;  */
+    color:rgb(0, 0, 0);
+}
+
 #donateContactContainer {
     display: flex;
     padding-top: 5px;
@@ -335,6 +359,20 @@ h2 {
     font-weight: 600;
 }
 
+
+
+/* -----------------------------------Sponsors Page ------------------------------*/
+
+#sponsorsContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.sponsor {
+    height: 300px;
+    width: 300px;
+    padding: 5px;
 
 
 
