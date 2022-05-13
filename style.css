@@ -114,31 +114,40 @@ h1 {
 }
 
 #performances {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 300px;
+    height: 350px;
     background-color: rgb(190, 190, 190, .4);
+    justify-content: space-around;
 }
 
 #performancesIntro {
     font-size: 28px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding-top: 8px;
+    /* padding-top: 8px; */
     text-align: center;
+    margin: 0px;
+    padding: 0px;
 }
 
 #midsummer {
     text-align: center;
     font-family: FellEnglish, sans-serif;
     font-size: 60px;
-    margin-top: -25px;
+    margin: 0px;
+    padding-bottom: 4px;
+    /* margin-top: -25px; */
 }
 
 #Shakespeare {
     text-align: center;
     font-family: FellEnglish, sans-serif;
     font-size: 30px;
-    margin-top: -60px;
-    margin-bottom: -5px;
+    margin-top: -35px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 #pratersMill {
@@ -147,6 +156,7 @@ h1 {
     color:rgb(0, 0, 0);
     font-weight: 600;
     text-align: center;
+    margin: 0px;
 }
 
 #burrPark {
@@ -155,7 +165,8 @@ h1 {
     color:rgb(0, 0, 0);
     font-weight: 600;
     text-align: center;
-    margin-top: -10px;
+    /* margin-top: -10px; */
+    margin: 0px;
 }
 
 #praterTickets {
@@ -184,7 +195,7 @@ button:hover {
 
 #donateContactContainer {
     display: flex;
-    padding-top: 5px;
+    padding-top: 2px;
 }
 
 #donateButtonContainer {
@@ -375,14 +386,356 @@ h2 {
     padding: 5px;
 }
 
+/* ----------------------------------- Mobile Compatibility ---------------------*/
+
+@media only screen and (max-width: 350px) {
+
+    h1 {
+        font-size: 30px;
+    }
+
+    #navBarList {
+        display: flex;
+        font-size: 20px;
+        flex-wrap: nowrap;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .navItem {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    #performancesIntro {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: none;
+    }
+        
+    #indexMain {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #intro {
+        order: 2;
+    }
+
+    #performances {
+    height: 550px;
+    order: 1;
+    }
+
+    #midsummer {
+        font-size: 55px;
+    }
+
+    #Shakespeare {
+        margin-top: -10px;
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+
+    #pratersMill {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #burrPark {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #donateContactContainer {
+        order: 3;
+        flex-direction: column;
+    }
+
+    #donateButtonContainer {
+        order: 0;
+        background-color: rgb(190, 190, 190, .4);
+        padding-top: 20px;
+    }
+
+    #donateIntro {
+        margin-top: 5px;
+    }
+
+    #donate-button {
+        width: 280px;
+    }
+
+    .sponsor {
+        height: 280px;
+        width: 280px;
+        padding: 5px;
+    }
+    }
+
+/*---------------------------------------------------------------------*/
 
 
+    @media screen and (min-width: 351px) and (max-width: 500px) {
+
+        h1 {
+            font-size: 30px;
+        }
+    
+        #navBarList {
+            display: flex;
+            font-size: 22px;
+            flex-wrap: nowrap;
+            padding-top: 10px;
+            padding-bottom: 0px;
+        }
+        
+        .navItem {
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+
+        #performancesIntro {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            display: none;
+        }
+            
+        #indexMain {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        #intro {
+            order: 2;
+        }
+    
+        #performances {
+            height: 450px;
+            order: 1;
+        }
+    
+        #midsummer {
+            font-size: 55px;
+            margin-top: -40px;
+        }
+    
+        #Shakespeare {
+            margin-top: -100px;
+            margin-bottom: 0px;
+            font-size: 25px;
+        }
+    
+        #pratersMill {
+            margin-top: -80px;
+            margin-bottom: -10px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    
+        #burrPark {
+            margin-top: -80px;
+            margin-bottom: -10px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    
+        #donateContactContainer {
+            order: 3;
+            flex-direction: column;
+        }
+    
+        #donateButtonContainer {
+            order: 0;
+            background-color: rgb(190, 190, 190, .4);
+            padding-top: 20px;
+        }
+    
+        #donateIntro {
+            margin-top: 5px;
+        }
+    
+        #donate-button {
+            width: 320px;
+        }
+    }
 
 
+/*---------------------------------------------------------------------------*/
 
 
+    @media screen and (min-width: 501px) and (max-width: 650px) {
+
+        h1 {
+            font-size: 30px;
+        }
+    
+        #navBarList {
+            display: flex;
+            font-size: 25px;
+            flex-wrap: nowrap;
+            padding-top: 10px;
+            padding-bottom: 0px;
+        }
+        
+        .navItem {
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+
+        #performancesIntro {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            display: none;
+        }
+            
+        #indexMain {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        #intro {
+            order: 2;
+        }
+    
+        #performances {
+            height: 450px;
+            order: 1;
+        }
+    
+        #midsummer {
+            font-size: 60px;
+        }
+    
+        #Shakespeare {
+            margin-top: -60px;
+            margin-bottom: 10px;
+            font-size: 30px;
+        }
+    
+        #pratersMill {
+            margin-top: -30px;
+            margin-bottom: -10px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    
+        #burrPark {
+            margin-top: -10px;
+            margin-bottom: -10px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    
+        #donateContactContainer {
+            order: 3;
+            flex-direction: column;
+        }
+    
+        #donateButtonContainer {
+            order: 0;
+            background-color: rgb(190, 190, 190, .4);
+            padding-top: 20px;
+        }
+    
+        #donateIntro {
+            margin-top: 5px;
+        }
+    
+        #donate-button {
+            width: 400px;
+        }
+    }
 
 
+    /*---------------------------------------------------------------*/
 
+
+    @media screen and (min-width: 651px) and (max-width: 752px) {
+
+        h1 {
+            font-size: 30px;
+        }
+    
+        #navBarList {
+            display: flex;
+            font-size: 25px;
+            flex-wrap: nowrap;
+            padding-top: 10px;
+            padding-bottom: 0px;
+        }
+        
+        .navItem {
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+
+        #performancesIntro {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            display: none;
+        }
+            
+        #indexMain {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        #intro {
+            order: 2;
+        }
+    
+        #performances {
+            height: 450px;
+            order: 1;
+        }
+    
+        #midsummer {
+            font-size: 60px;
+        }
+    
+        #Shakespeare {
+            margin-top: -60px;
+            margin-bottom: 10px;
+            font-size: 30px;
+        }
+    
+        #pratersMill {
+            margin-top: -30px;
+            margin-bottom: -10px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    
+        #burrPark {
+            margin-top: -10px;
+            margin-bottom: -10px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    
+        #donateContactContainer {
+            order: 3;
+            flex-direction: column;
+        }
+    
+        #donateButtonContainer {
+            order: 0;
+            background-color: rgb(190, 190, 190, .4);
+            padding-top: 20px;
+        }
+    
+        #donateIntro {
+            margin-top: 5px;
+        }
+    
+        #donate-button {
+            width: 280px;
+        }
+    }
 
 
